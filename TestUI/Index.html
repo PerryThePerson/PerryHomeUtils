@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="customUI.css">
+</head>
+<body>
+
+<div class="container" id="myGroup"> 
+  <h2 style="color:#D9853B;" class="text-center">Shopping Helper</h2>
+  <button type="button" class="btn btn-block btn-primary squared " data-toggle="collapse"  data-target="#demo" >Bathroom</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <button type="button" class="btn btn-block btn-primary squared"  data-toggle="collapse" data-target="#demo2" >Kitchen</button>
+  <div id="demo2" class="collapse">
+    <table class="table">
+	
+	<th>Product</th>
+	<th>Image</th>
+	<tr>
+		
+		<td>Degree Men Sport</td>
+		<td>Link</td>
+	</tr>
+    </table>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Modal Test</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+var $myGroup = $('#myGroup');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+    $myGroup.find('.collapse.in').collapse('hide');
+});
+</script>

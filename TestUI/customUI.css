@@ -1,0 +1,47 @@
+
+.squared {
+	
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+		  margin-top: 3px;
+}
+
+body {
+	background-color: #ECECEA;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:hover{
+	
+	color: #ffffff;
+	background-color: #D9853B;
+	border-color: #D9853B !important;
+	border-radius: 0px !important;
+	outline: none;
+	
+}
+
+.table{
+	
+	background-color: #ECECEA;
+}
+
+
+
+@font-face {
+	
+	font-family: TestingFont;
+	src: url('Milkshake.ttf') format('truetype');
+}
+
+h2 {
+	font-family: TestingFont;
+}
+
+
+
+
